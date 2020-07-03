@@ -1,0 +1,36 @@
+{
+  "SayHello": "Hello UI5",
+  "Supplier": {
+    "Name": "Google",
+    "Address": "Cupertino, CA"
+  },
+  "Products": [
+    {
+      "ID": "1",
+      "Name": "Android 10",
+      "Description": "The Google Android 10 has the footprint and design traits ot the Android 9",
+      "ReleaseDate": "2016-03-31T12:00:00.000Z",
+      "DiscontinuedDate": "2018-09-12T00:00:00.000Z",
+      "Rating": "4.5",
+      "Price": "349.99"
+    },
+    {
+      "ID": "2",
+      "Name": "Android 9",
+      "Description": " The Android X was intended to showcase what google considered the technology of the future. ",
+      "ReleaseDate": "2017-09-12T12:00:00.000Z",
+      "DiscontinuedDate": "2018-09-12T00:00:00.000Z",
+      "Rating": "4.4",
+      "Price": "899.99"
+    },
+    {
+      "ID": "3",
+      "Name": "Android 11",
+      "Description": "The Android 11 is available in six colors: black, white, red, purple, green, and yellow.",
+      "ReleaseDate": "2019-09-20T12:00:00.000Z",
+      "DiscontinuedDate": "",
+      "Rating": "4.8",
+      "Price": "1149.99"
+    }
+  ]
+}

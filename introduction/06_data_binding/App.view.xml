@@ -1,0 +1,38 @@
+<mvc:View xmlns="sap.m"
+  xmlns:mvc="sap.uic.core.mvc"
+  controllerName="demo.ui5.ProductListApp.app"
+>
+<VBox>
+   <Title text="Product List" titleStyle="H1"/>
+   <Title text="Propperty binding" titleStyle="H2"/>
+   <Text text="{path: '/SayHello'}"/>
+   <Text text="{/SayHello}"/>
+   <Title text="Element binding" titleStyle="H2"/>
+    <VBox binding="{/Supplier}">
+      <Text text="Supplier name: {Name}"/>
+      <Text text="Supplier address: {Address}"/>
+    </VBox>
+    <Title text="Aggregation binding" titleStyle="H2"/>
+    <List items="{/Products}">
+      <StandardListItem title="{Name}" description="{Price}"/>
+    </List>
+
+</VBox>
+
+<VBox>
+   <Title text="Product List" titleStyle="H1"/>
+   <Title text="Propperty binding" titleStyle="H2"/>
+   <Text text="{path: 'custom>/SayHello'}"/>
+   <Text text="{custom>/SayHello}"/>
+   <Title text="Element binding" titleStyle="H2"/>
+    <VBox binding="{custom>/Supplier}">
+      <Text text="Supplier name: {custom>Name}"/>
+      <Text text="Supplier address: {custom>Address}"/>
+    </VBox>
+    <Title text="Aggregation binding" titleStyle="H2"/>
+    <List items="{custom>/Products}">
+      <StandardListItem title="{custom>Name}" description="{custom>Price}"/>
+    </List>
+
+</VBox>
+</mvc:View>
